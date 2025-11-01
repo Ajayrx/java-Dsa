@@ -6,7 +6,6 @@ public class test {
 
         System.out.print("enter the arr size: ");
         int size = sc.nextInt();
-        
 
         int arr[] = new int[size];
         for (int i = 0; i < size; i++) {
@@ -20,7 +19,6 @@ public class test {
 
         switch (choice) {
             case 1:
-                
 
                 for (int i = 0; i < len; i++) {
                     boolean swapped = false;
@@ -33,32 +31,45 @@ public class test {
                             swapped = true;
                         }
                     }
+                    System.out.print("step "+(i+1)+" : ");
+                    for (int j : arr) {
+                        System.out.print(j + " ");
+                    }
+                    System.out.println();
                     if (!swapped)
                         break;
                 }
 
                 // print array
-
+                System.out.print("Bubble sorted array :  ");
                 for (int i = 0; i < len; i++) {
-                    System.out.print(arr[i] + " ");
+                    System.out.print(+arr[i] + " ");
                 }
                 break;
 
             case 2:
-                for (int i=0;i<len-1;i++){
-                    int small=i;
-                    for (int j=i+1;j<len;j++){
-                        if (arr[j]<arr[small]){
-                            small=j;
+                for (int i = 0; i < len - 1; i++) {
+                    int small = i;
+                    for (int j = i + 1; j < len; j++) {
+                        if (arr[j] < arr[small]) {
+                            small = j;
                         }
                     }
-                    int temp=arr[small];
-                    arr[small]=arr[i];
-                    arr[i]=temp;
-                }
+                    if (small != i) {
+                        int temp = arr[small];
+                        arr[small] = arr[i];
+                        arr[i] = temp;
+                    }
+                    System.out.print("Step " + (i + 1) + ": ");
+                    for (int j : arr) {
+                        System.out.print(j + " ");
+                    }
+                    System.out.println();
 
-                for (int i:arr){
-                    System.out.print(i+" ");
+                }
+                System.out.print("selection sorted array : ");
+                for (int i : arr) {
+                    System.out.print(i + " ");
                 }
                 break;
 
