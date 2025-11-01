@@ -20,7 +20,7 @@ public class test {
         switch (choice) {
             case 1:
 
-                for (int i = 0; i < len; i++) {
+                for (int i = 0; i < len-1; i++) {
                     boolean swapped = false;
 
                     for (int j = 0; j < len - i - 1; j++) {
