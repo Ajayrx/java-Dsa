@@ -30,10 +30,10 @@ public class x2darray {
                 if (matrix[i][j] == x){
                     System.out.print("found at index row " + i + " & column " + j);
                     found = true;
-                    //break;
+                    break;
                 }        
             }
-            System.out.println();
+            //System.out.println();
         }
 
         if (!found) {
