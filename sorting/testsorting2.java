@@ -1,4 +1,4 @@
-public class test2 {
+public class testsorting2 {
     public static void main(String[] args) {
         int[] arr = {7, 8, 1, 3, 2};
         int n = arr.length;
