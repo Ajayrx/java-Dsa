@@ -14,7 +14,7 @@ public class test {
         }
         int len = arr.length;
 
-        System.out.print("Enter 1 for buuble sorting || 2 for selection sorting: ");
+        System.out.print("Enter 1 for Buuble || 2 for Selection || 3 for Insertion sorting: ");
         int choice = sc.nextInt();
 
         switch (choice) {
@@ -31,7 +31,7 @@ public class test {
                             swapped = true;
                         }
                     }
-                    System.out.print("step "+(i+1)+" : ");
+                    System.out.print("step " + (i + 1) + " : ");
                     for (int j : arr) {
                         System.out.print(j + " ");
                     }
@@ -73,8 +73,33 @@ public class test {
                 }
                 break;
 
+            case 3:
+                for (int i = 1; i < len; i++) {
+                    int current = arr[i];
+                    int j = i - 1;
+                    while (j >= 0 && current < arr[j]) {
+                        arr[j + 1] = arr[j];
+                        j--;
+                    }
+
+                    if (j + 1 != i) {
+                        arr[j + 1] = current;
+                    }
+
+                    System.out.print("steps: ");
+                    for (int k : arr) {
+                        System.out.print(k + " ");
+                    }
+                    System.out.println();
+                }
+                System.out.print("Insertion sorted array: ");
+                for (int i : arr) {
+                    System.out.print(i + " ");
+                }
+                break;
+
             default:
-                System.out.println("invalid input use 1 or 2");
+                System.out.println("Invalid input use 1 or 2 or 3 ");
                 break;
         }
 
@@ -83,6 +108,19 @@ public class test {
     }
 
 }
+
+// function implement ......
+
+// public static void bubbleSort(int[] arr) { ... }
+// public static void selectionSort(int[] arr) { ... }
+// public static void insertionSort(int[] arr) { ... }
+// Then your switch becomes:
+
+// switch (choice) {
+//     case 1 -> bubbleSort(arr);
+//     case 2 -> selectionSort(arr);
+//     case 3 -> insertionSort(arr);
+//     default -> System.out.println("Invalid input, use 1 or 2 or 3");
 
 // public static void main(String[] args) {
 // Scanner sc=new Scanner(System.in);
