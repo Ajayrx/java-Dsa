@@ -9,6 +9,7 @@ public class arraynameinput {
         sc.nextLine();  // clears all leftover lines
 
         String names[] = new String[size];
+        // StringBuilder n=new StringBuilder();    it doesnot require size as parameter 
 
         for (int i=0;i<size;i++){
             System.out.print("Enter the name at name["+i+"] : ");

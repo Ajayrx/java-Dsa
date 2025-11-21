@@ -5,21 +5,25 @@ public class maxminarray {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of the Array: ");
         int size = sc.nextInt();
-        int number[] = new int[size];
+        int arr[] = new int[size];
 
         for (int i = 0; i < size; i++) {
             System.out.print("Enter the value at Number[" + i + "] : ");
-            number[i] = sc.nextInt();
+            arr[i] = sc.nextInt();
         }
 
-        int max = Integer.MIN_VALUE;
-        int min = Integer.MAX_VALUE;
+        // int max = Integer.MIN_VALUE;
+        // int min = Integer.MAX_VALUE;
+
+        // easy approch
+        int max=arr[0];
+        int min=arr[0];
 
         for (int i=0;i<size;i++){
 
-            if (number[i]>max) max=number[i];
+            if (arr[i]>max) max=arr[i];
             
-            if (number[i]<min) min=number[i];
+            if (arr[i]<min) min=arr[i];
     
         }
 

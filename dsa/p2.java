@@ -13,7 +13,7 @@ public class p2 {
         return true;
     }
     public static void main(String[] args) {
-        int n=8;
+        int n=3;
         System.out.println(isprime(n) ? n + " is prime " : n + " is not prime");
     }
 }

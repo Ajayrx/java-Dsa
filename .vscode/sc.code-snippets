@@ -1,0 +1,13 @@
+{
+	"Print to console": {
+		"scope": "java",
+		"prefix": "sc",
+		"body": [
+			"Scanner sc=new Scanner(System.in);",
+			"$1",
+			"",
+			"sc.close();"
+		],
+		"description": "scanner snippet"
+	}
+}
