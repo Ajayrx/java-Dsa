@@ -15,7 +15,7 @@ public class methodoverriding{
         int result=psum.my_sum(10, 20);
         System.out.println("parent sum = "+result);
 
-        child csum=new child();
+        parent csum=new child();
         System.out.println("result of child="+csum.my_sum(10,20));
     }
 }
