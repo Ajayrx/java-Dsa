@@ -10,11 +10,11 @@ class test{
     }
 
     public static void main(String[] args) {
-        tesst t1 = new tesst(1);
-        tesst t2 = new tesst(2);
+        // tesst t1 = new tesst(1);
+        // tesst t2 = new tesst(2);
 
-        t1 = null;
-        t2 = null;
+        // t1 = null;
+        // t2 = null;
 
         System.gc();
 
